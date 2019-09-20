@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <title>Styling med CSS</title>
+  <!--her refererer vi til fonten Merriweather fra Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- "Intern style sheet" -->
+  <meta charset=utf8>
+  <style>
+  /* CSS deles op i tre dele: selector - property - value */
+    h1 {
+      color:red;
+      /* HEX- farvekode */
+      background-color:#eee;
+      font-family: arial, verdana, sans-serif;
+      font-size: 36px;
+      font-style: italic;
+      text-align: center;
+      /*text-decoration: underline;*/
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-left: 50px;
+      margin-right: 90px;
+      margin-top: 50px;
+      margin-bottom: 100px;
+      /* ovenstående er det samme som: margin: 100px 90px 50px 100px 50px. Altid med uret rundt (starter med
+      toppen) */
+      padding: 50px;
+      border: 10px dotted black;
+      width: 500px;
+    }
+    body {
+      /* rgb-farvekode*/
+      background-color:rgb(255,204,168);
+      background-image:url("laks.jpg");
+      
+      /*background-position: center center ;
+      background-atachment: fixed; */
+      background-size:cover;
+
+
+    }
+
+    p {
+      font-family:Merriweather,georgia,"times new roman", serif;
+       font-size: 18px;
+       font-weight: normal;
+       text-align: justify;
+       line-height:150%;
+    }
+    a{
+      font-family:Merriweather, serif;
+      color: salmon;
+      border: 2px dotted red;
+      padding: 10px;
+
+    }
+    a:link{
+     color: teal;
+
+    }
+    a:visited{
+      color:purple;
+    }
+    a:hover{
+      color: red
+      font-family: arial;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 50px;
+    }
+    a:active{
+      color: green;
+    }
+  </style>
+
+</head>
+<body>
+<!-- når CSS skrives inde i et tag som en attribut, kaldes det for "inline style"-->
+
+  <h1 style="color:green;">Styling med CSS</h1>
+  <p style="color:blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem
+    totam, atque, fuga odio nemo earum deleniti eligendi voluptatem eum accusamus quo laborum
+    dolore rem sapiente dolor. Nemo ea, repellendus?</p>
+
+    <h1>En anden overskrift</h1>
+    <a href="https://da.wikipedia.org/wiki/Laks">Dette er et link</a>
+    <br>
+    <a href="https://cph.business.dk/nogetandet.html">Et andet link</a>
+
+</body>
+</html>
